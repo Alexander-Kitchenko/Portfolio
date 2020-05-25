@@ -1,53 +1,57 @@
-/*
-Error: Base-level rules cannot contain the parent-selector-referencing character '&'.
-        on line 159 of style_prepros.scss
+@import url(../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css);
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500&family=Montserrat&display=swap");
+@import url(bootstrap.min.css);
+@import url(bootstrap-theme.css);
+@import url(owl.carousel.min.css);
+@import url(owl.theme.default.min.css);
+@import url(animate.min.css);
+@import url(hover.css);
+@import url(style.css);
+.navbar-default {
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  box-shadow: none; }
 
-154:     margin-left: -1px;
-155: 
-156:   }
-157: }
-158: 
-159:   &:hover a:after {
-160:   width: 100%;
-161: }
-162: //&:hover a:after {
-163: //  width: 100%;
-164: //}
+.luis {
+  font-size: 90px; }
 
-Backtrace:
-style_prepros.scss:159
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/selector/comma_sequence.rb:31:in `resolve_parent_refs'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:435:in `visit_rule'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/bin/scss:13:in `<top (required)>'
-C:/Ruby26-x64/bin/scss:23:in `load'
-C:/Ruby26-x64/bin/scss:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Base-level rules cannot contain the parent-selector-referencing character '&'.\A         on line 159 of style_prepros.scss\A \A 154:     margin-left: -1px;\A 155: \A 156:   }\A 157: }\A 158: \A 159:   &:hover a:after {\A 160:   width: 100%;\A 161: }\A 162: //&:hover a:after {\A 163: //  width: 100%;\A 164: //}"; }
+.banner {
+  background-image: url("../images/backgraund_fon_02.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  text-align: center; }
+
+.navbar-nav li {
+  position: relative; }
+
+.navbar-nav li a {
+  font-size: 16px;
+  position: relative; }
+  .navbar-nav li a:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #878787;
+    position: absolute;
+    bottom: -9px;
+    z-index: 1; }
+  .navbar-nav li a:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 3px;
+    background-color: #dedede;
+    position: absolute;
+    bottom: -9px;
+    z-index: 2;
+    left: 50%;
+    margin-left: -1px; }
+
+.nav li a {
+  padding: 0;
+  margin: 10px 15px; }
+
+/*# sourceMappingURL=style_prepros.css.map */

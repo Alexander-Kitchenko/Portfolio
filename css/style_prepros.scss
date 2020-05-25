@@ -1,0 +1,123 @@
+@import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500&family=Montserrat&display=swap');
+@import "bootstrap.min.css";
+@import "bootstrap-theme.css";
+@import "owl.carousel.min.css";
+@import "owl.theme.default.min.css";
+@import "animate.min.css";
+@import "hover.css";
+@import "style.css";
+
+
+
+
+
+
+
+.navbar-header {
+  position: relative;
+  top: 20px;
+
+}
+
+.navbar {
+   position: relative;
+   min-height: 0px;
+   margin-bottom: 0px;
+  border: 1px solid transparent;
+}
+
+.btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+   display: none;
+  content: " ";
+}
+
+
+
+
+.navbar-default .navbar-toggle {
+  border-color: white;
+}
+.navbar {
+  margin-bottom: 0;
+}
+.navbar-default {
+  background-color: white;
+  border: none;
+  .navbar-nav li {
+
+
+      font-size: 16px;
+      display: inline-block;
+      //padding: 43px 28px;
+      position: relative;
+      &:after{
+        content:"" ;
+        display: block;
+        width: 0;
+        height: 3px;
+        background-color: #7c8899;
+
+        bottom: -8px;
+        transition: 0.5s;
+      }
+      &:hover:after {
+        color:#4a5768;
+        width: 100%;
+
+
+
+
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-default {
+    background-color: white;
+    border: none;
+    .navbar-nav li {
+      &:after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 0;
+        background-color: #49cbcd;
+        transition: 0.5s;
+      }
+      &:hover:after {
+        width: 100%;
+      }
+      a {
+
+        font-size: 16px;
+        display: inline-block;
+        padding: 15px 15px;
+        &:hover {
+          color:#49cbcd;
+          background-color: #f8f9fb;
+        }
+      }
+    }
+  }
+}
+
+a:hover {
+  text-decoration: none;
+
+}
+
+.nav li a {
+  margin: 32px 40px;
+  padding: 0;
+  line-height: 16px;
+}
+.banner {
+  background-image: url("../images/backr_img_02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  text-align: center;
+ height: 750px;
+}
+

@@ -78,15 +78,447 @@
   margin: 10px 15px; }
 
 .learn-more-btn {
-  font-family: Asap;
   color: #4d4d4d;
-  font-size: 16px;
+  line-height: 16px;
   text-align: center;
   display: block;
   text-decoration: none;
   border: solid 3px #4d4d4d;
   max-width: 160px;
-  padding: 19px 47px;
-  margin: auto; }
+  padding: 20px 0;
+  margin-right: 20px; }
+
+.wrap {
+  padding-bottom: 299px; }
+
+.about {
+  padding: 110px 0 125px;
+  background-color: #ffffff; }
+
+.about_img {
+  padding: 0 0 65px; }
+
+.about_info {
+  padding: 67px 0; }
+
+h3 {
+  position: relative;
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+  color: #4d4d4d; }
+  h3:before {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 60px;
+    top: -20px;
+    position: absolute;
+    background-color: #7a7a7a; }
+
+p {
+  color: #4d4d4d;
+  font-size: 16px;
+  margin-bottom: 40px; }
+
+header .btn-default {
+  font-size: 16px;
+  background-image: none;
+  background-color: transparent;
+  color: #4d4d4d;
+  border: solid 1px #4d4d4d;
+  border-radius: 0;
+  margin-bottom: 30px;
+  font-family: "Asap", sans-serif;
+  font-weight: 600; }
+
+header .btn-default:hover {
+  background-color: #ffffff;
+  border: none; }
+
+header .btn-default:focus {
+  background-color: #4d4d4d;
+  color: #ffffff;
+  outline: none; }
+
+.btn {
+  padding: 10px 47px; }
+
+.servis {
+  background-color: #f6f6f6;
+  padding: 120px 0 40px; }
+  @media screen and (max-width: 991px) {
+    .servis {
+      padding: 80px 0 10px; } }
+  .servis h3 {
+    position: relative;
+    font-family: "Asap", sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    color: #4d4d4d;
+    margin-bottom: 70px; }
+    .servis h3:before {
+      content: "";
+      display: block;
+      height: 4px;
+      width: 60px;
+      top: -20px;
+      left: 50%;
+      margin-left: -30px;
+      position: absolute;
+      background-color: #7a7a7a; }
+  .servis h5 {
+    font-size: 24px;
+    line-height: 49px;
+    color: #4d4d4d;
+    margin-top: 10px;
+    margin-bottom: 70px; }
+
+.skils {
+  background-color: white;
+  padding: 144px 0; }
+  @media screen and (max-width: 991px) {
+    .skils {
+      padding: 80px 0; } }
+  @media screen and (max-width: 991px) and (max-width: 767px) {
+    .skils {
+      padding: 40px 0; } }
+
+  .skils h3 {
+    position: relative;
+    font-family: "Asap", sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    color: #4d4d4d;
+    margin-bottom: 61px; }
+    .skils h3:before {
+      content: "";
+      display: block;
+      height: 4px;
+      width: 60px;
+      top: -20px;
+      left: 50%;
+      margin-left: -30px;
+      position: absolute;
+      background-color: #7a7a7a; }
+
+.portfolio {
+  background-color: white;
+  padding: 100px 0; }
+  .portfolio .flex {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    @media screen and (max-width: 767px) {
+      .portfolio .flex {
+        flex-direction: column;
+        padding: 0; } }
+    .portfolio .flex img {
+      margin-bottom: 15px; }
+      .portfolio .flex img:hover {
+        -webkit-box-shadow: 0 0 37px 17px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 0 37px 17px rgba(0, 0, 0, 0.15); }
+  @media screen and (max-width: 991px) {
+    .portfolio {
+      padding: 40px 0; } }
+  .portfolio h3 {
+    position: relative;
+    font-family: "Asap", sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    color: #4d4d4d;
+    margin-bottom: 43px; }
+    .portfolio h3:before {
+      content: "";
+      display: block;
+      height: 4px;
+      width: 60px;
+      top: -20px;
+      left: 50%;
+      margin-left: -30px;
+      position: absolute;
+      background-color: #7a7a7a; }
+  .portfolio .portfolio_img {
+    padding: 0 15px; }
+  .portfolio #box {
+    background-color: transparent;
+    width: 100%;
+    overflow: hidden; }
+  .portfolio .slider {
+    transition: all 2s ease-in-out;
+    height: 0; }
+  .portfolio .slider.open {
+    height: 320px; }
+    @media screen and (max-width: 767px) {
+      .portfolio .slider.open {
+        height: 960px; } }
+  .portfolio .btn-primary {
+    margin-top: 30px;
+    font-size: 16px;
+    background-image: none;
+    background-color: transparent;
+    border-color: transparent;
+    color: #4d4d4d; }
+    @media screen and (max-width: 767px) {
+      .portfolio .btn-primary {
+        color: #4d4d4d;
+        border-radius: 0; } }
+    .portfolio .btn-primary:hover {
+      -webkit-box-shadow: 0 18px 27px 2.32px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 18px 27px 2.32px rgba(0, 0, 0, 0.1); }
+  .portfolio .btn {
+    padding: 10px 25px; }
+
+.test {
+  padding: 140px 0; }
+  .test h3 {
+    position: relative;
+    font-family: "Asap", sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    color: #4d4d4d;
+    margin-bottom: 68px; }
+    .test h3:before {
+      content: "";
+      display: block;
+      height: 4px;
+      width: 60px;
+      top: -20px;
+      left: 50%;
+      margin-left: -30px;
+      position: absolute;
+      background-color: #7a7a7a; }
+  .test .test_wrap {
+    padding: 75px 0 40px;
+    background-color: #f6f6f6; }
+    .test .test_wrap h5 {
+      line-height: 32px;
+      color: #363636;
+      font-size: 22px; }
+    .test .test_wrap span {
+      display: block;
+      font-size: 22px;
+      line-height: 32px;
+      color: #363636; }
+  .test h4 {
+    margin: 0;
+    font-family: "Asap", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #373737; }
+    @media screen and (max-width: 767px) {
+      .test h4 {
+        margin-top: 15px;
+        text-align: center; } }
+  .test h6 {
+    font-family: "Asap", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #373737; }
+    @media screen and (max-width: 767px) {
+      .test h6 {
+        text-align: center; } }
+  .test p {
+    font-family: "Asap", sans-serif;
+    font-weight: 400;
+    color: #919191;
+    font-size: 14px;
+    line-height: 22px; }
+  .test .owl-wrap {
+    padding: 80px 0 40px 120px;
+    margin-bottom: 100px;
+    border: solid 1px #212121; }
+    @media screen and (max-width: 1024px) {
+      .test .owl-wrap {
+        padding: 80px 0 40px 60px; } }
+    @media screen and (max-width: 991px) {
+      .test .owl-wrap {
+        padding: 15px 0; } }
+  .test .owl-item img {
+    width: auto;
+    margin: auto; }
+  .test .owl-dots {
+    text-align: center;
+    margin-top: -20px;
+    outline: none !important; }
+    .test .owl-dots .owl-dot {
+      margin-top: 50px;
+      outline: none !important; }
+      .test .owl-dots .owl-dot span {
+        width: 11px;
+        height: 11px;
+        background-color: transparent;
+        border: solid 1px #212121;
+        display: inline-block;
+        margin: 0 5px; }
+  .test .owl-dots .owl-dot.active span {
+    width: 11px;
+    height: 11px;
+    background-color: #212121;
+    display: inline-block;
+    position: relative;
+    top: 0; }
+  .test .flex {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-between; }
+    .test .flex .flex_wrap {
+      margin-left: 30px; }
+      @media screen and (max-width: 767px) {
+        .test .flex .flex_wrap {
+          margin-left: 0;
+          align-items: center; } }
+    @media screen and (max-width: 991px) {
+      .test .flex {
+        padding: 0 15px; } }
+    @media screen and (max-width: 767px) {
+      .test .flex {
+        flex-direction: column;
+        padding: 0 15px; } }
+
+.hello {
+  margin-top: 121px;
+  position: relative;
+  padding: 140px 0 0;
+  background-image: url("../images/backg_footer_49.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .hello h3 {
+    margin-bottom: 70px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    color: #f0f0f0;
+    letter-spacing: 7px; }
+    @media screen and (max-width: 767px) {
+      .hello h3 {
+        letter-spacing: 3px; } }
+    .hello h3:before {
+      content: "";
+      display: block;
+      height: 4px;
+      width: 60px;
+      top: -20px;
+      left: 50%;
+      margin-left: -30px;
+      position: absolute;
+      background-color: #7a7a7a; }
+  .hello form {
+    max-width: 770px; }
+  .hello .form-control {
+    height: 57px;
+    font-size: 16px;
+    color: #4d4d4d;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    box-shadow: none !important; }
+  .hello textarea.form-control {
+    resize: none;
+    height: 200px; }
+    @media screen and (max-width: 767px) {
+      .hello textarea.form-control {
+        height: 90px; } }
+  .hello ::-webkit-input-placeholder {
+    color: #4d4d4d; }
+  .hello ::-moz-placeholder {
+    color: #4d4d4d; }
+  .hello :-moz-placeholder {
+    color: #4d4d4d; }
+  .hello :-ms-input-placeholder {
+    color: #4d4d4d; }
+  .hello .btn-default {
+    border: none;
+    background-image: none;
+    width: 100%;
+    background-color: white;
+    color: #4d4d4d;
+    box-shadow: none;
+    font-size: 16px;
+    font-family: "Asap", sans-serif;
+    font-weight: 700;
+    padding: 0 0; }
+    .hello .btn-default:after {
+      content: url("../images/send_img_46.jpg");
+      display: inline-block;
+      position: relative;
+      top: 1px; }
+  .hello .end {
+    margin-top: 58px;
+    padding: 27px 0;
+    border-top: solid 1px #FFFFFF; }
+    .hello .end h5 {
+      margin-top: 0;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 600;
+      font-size: 18px;
+      color: white; }
+    .hello .end .social {
+      margin-bottom: 30px; }
+      .hello .end .social a {
+        margin-right: 9px;
+        display: inline-block;
+        text-decoration: none;
+        width: 27px;
+        height: 27px;
+        text-align: center;
+        line-height: 27px;
+        background-color: #ffffff;
+        color: #4d4d4d; }
+  .hello .end .row .social a.facebok:before {
+    display: inline-block;
+    content: "\f39e";
+    font-family: "Font Awesome 5 Brands", sans-serif; }
+  .hello .end .row .social a.twit:before {
+    display: inline-block;
+    content: "\f099";
+    font-family: "Font Awesome 5 Brands", sans-serif; }
+  .hello .end .row .social a.ini:before {
+    display: inline-block;
+    content: "\f0e1";
+    font-family: "Font Awesome 5 Brands", sans-serif; }
+  .hello .end .row .social a.G\+:before {
+    display: inline-block;
+    content: "\f0d5";
+    font-family: "Font Awesome 5 Brands", sans-serif; }
+  .hello .end .row .social a.be:before {
+    display: inline-block;
+    content: "\f1b4";
+    font-family: "Font Awesome 5 Brands", sans-serif; }
+  .hello .end .row .social a.drible:before {
+    display: inline-block;
+    content: "\f17d";
+    font-family: "Font Awesome 5 Brands", sans-serif; }
+  .hello .end .row .social a:hover {
+    background-color: #3ec2f3;
+    color: #ffffff; }
+  .hello .hello_link {
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 45px;
+    position: absolute;
+    right: 45px;
+    bottom: 190px;
+    color: #4d4d4d;
+    font-size: 24px; }
+    @media screen and (max-width: 991px) {
+      .hello .hello_link {
+        bottom: 150px;
+        right: 30px; } }
+    @media screen and (max-width: 767px) {
+      .hello .hello_link {
+        display: none; } }
+    .hello .hello_link:before {
+      content: "\f106";
+      display: inline-block;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900; }
 
 /*# sourceMappingURL=style_prepros.css.map */

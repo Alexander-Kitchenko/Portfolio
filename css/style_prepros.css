@@ -521,4 +521,79 @@ header .btn-default:focus {
       font-family: "Font Awesome 5 Free";
       font-weight: 900; }
 
+.globe {
+  margin: 30px auto;
+  position: relative;
+  width: 300px; }
+  @media screen and (max-width: 991px) {
+    .globe {
+      display: none; } }
+  @media screen and (max-width: 991px) and (max-width: 767px) {
+    .globe {
+      display: none; } }
+
+  @media only screen and (max-width: 991px) and (max-width: 767px) and (max-width: 1200px) {
+    .globe {
+      display: none; } }
+
+.globe * {
+  position: absolute; }
+
+.globe:before {
+  content: '';
+  position: relative;
+  display: block;
+  padding-bottom: 100%; }
+
+.globe__texture-wrap {
+  top: 0;
+  left: 0;
+  width: 38%;
+  height: 38%;
+  border-radius: 100%;
+  overflow: hidden;
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+  /* this fixes the overflow:hidden in Chrome/Opera */
+  z-index: 1;
+  background: radial-gradient(circle at 35% 40%, #71dfff, #81c6ff 40%); }
+
+.globe__texture {
+  top: -40%;
+  left: 0;
+  width: 180%;
+  height: 180%;
+  animation: globe-texture 5s linear infinite; }
+
+.globe__texture:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%; }
+
+.globe__texture,
+.globe__texture:before {
+  background: url(https://i.ibb.co/hm4NhqF/globe-texture.png) repeat-x center center/contain; }
+
+@keyframes globe-texture {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(-100%); } }
+.globe__atmosphere {
+  top: 0;
+  left: 0;
+  width: 38%;
+  height: 38%;
+  border-radius: 100%;
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: inset 0 6px 20px 0 #81c6ff, inset 0 -6px 20px 0 rgba(225, 238, 189, 0.75), inset 0 0 5px 0 #e1eebd; }
+
+.globe {
+  margin: -700px 0px;
+  position: relative;
+  width: 300px; }
+
 /*# sourceMappingURL=style_prepros.css.map */
